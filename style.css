@@ -36,7 +36,7 @@ h1 {
   translate: 948px 350px;
 }
 
-.footer {
+footer {
   display: none;
 }
 
@@ -44,7 +44,7 @@ h1 {
   .loading {
     translate: 195px 350px;
   }
-  .footer {
+  footer {
     display: flex;
     position: fixed;
     width: 100lvw;
@@ -52,6 +52,7 @@ h1 {
     background-color: #007bff;
     bottom: 0;
     justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -102,19 +103,10 @@ h1 {
 }
 
 #message {
-  padding: 10px;
-  width: 250px;
   height: 100px;
-  font-size: x-large;
-  border-radius: 8px;
-  font-family: "Helvetica";
 }
 
 button {
-  width: 100px;
-  height: 40px;
-  font-size: large;
-  border-radius: 8px;
   cursor: pointer;
   font-family: "Helvetica";
   background-color: transparent;
@@ -122,11 +114,18 @@ button {
 
 textarea:focus {
   outline: none;
-  border: 3px solid #007bff;
+  border: 2px solid #007bff;
 }
 
 textarea {
+  line-height: 1.5;
   resize: none;
+  width: 100%;
+  height: 25px;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-family: Helvetica;
 }
 
 .mystery {
