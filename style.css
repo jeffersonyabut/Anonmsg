@@ -108,6 +108,7 @@ footer {
 
 button {
   cursor: pointer;
+  background-color: transparent;
 }
 
 textarea:focus {
@@ -124,6 +125,7 @@ textarea {
   padding: 10px 12px;
   border-radius: 8px;
   font-family: Helvetica;
+  border: 2px solid #333333;
 }
 
 .mystery {
