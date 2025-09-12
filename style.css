@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url(public/Helvetica.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Achafita";
+  src: url(public/Achafita.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 150px;
+  color: #007bff;
+}
+
+.loading {
+  display: none;
+  position: absolute;
+  translate: 948px 350px;
+}
+
+@media (max-width: 600px) {
+  .loading {
+    translate: 195px 350px;
+  }
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  --c: no-repeat radial-gradient(farthest-side, #007bff 92%, #0000);
+  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 10px 10px;
+  animation: l18 1s infinite;
+  position: relative;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: 3px;
+  background: repeating-conic-gradient(#0000 0 35deg, #007bff 0 90deg);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
+  border-radius: 50%;
+}
+
+@keyframes l18 {
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+.jeff {
+  padding: 10px;
+  width: 100lvw;
+  height: max-content;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  width: 100lvw;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#message {
+  padding: 10px;
+  width: 250px;
+  height: 100px;
+  font-size: x-large;
+  border-radius: 8px;
+  font-family: "Helvetica";
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: large;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Helvetica";
+  background-color: transparent;
+}
+
+textarea:focus {
+  outline: none;
+  border: 3px solid #007bff;
+}
+
+textarea {
+  resize: none;
+}

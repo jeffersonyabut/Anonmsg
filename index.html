@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+    <div class="title">
+      <h1 style="font-family: Achafita">ilada ko</h1>
+    </div>
+    <div class="jeff">
+      <form
+        onsubmit="sendMessage(event)"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+        "
+      >
+        <textarea
+          name="from"
+          placeholder="from who?"
+          id="name"
+          style="
+            width: 250px;
+            height: 25px;
+            font-size: x-large;
+            padding: 10px;
+            border-radius: 8px;
+            letter-spacing: -1.2px;
+          "
+          autofocus
+        ></textarea>
+        <textarea name="message" placeholder="Message" id="message"></textarea>
+        <button
+          type="submit"
+          style="
+            margin-top: 16px;
+            border: 1px solid #007bff;
+            background-color: #007bff;
+            color: #ffffff;
+          "
+        >
+          Send
+        </button>
+      </form>
+      <p style="font-size: 12px; margin-top: 16px; color: #666666">
+        made with love < 3
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
