@@ -44,6 +44,7 @@ footer {
   .loading {
     translate: 195px 350px;
   }
+
   footer {
     display: flex;
     position: fixed;
@@ -85,7 +86,6 @@ footer {
 .jeff {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   width: 100lvw;
   height: max-content;
   text-align: center;
